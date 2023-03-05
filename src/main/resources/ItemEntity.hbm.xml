@@ -12,10 +12,10 @@
         <property name="total">
             <column name="total" sql-type="int" not-null="true"/>
         </property>
-        <set name="carts" table="cart_item" inverse="false" lazy="true" fetch="select" cascade="all" >
+        <set name="carts" table="card_item" inverse="false" lazy="true" fetch="select" cascade="all" >
             <key> <column name="id_item" not-null="true"></column></key>
-            <many-to-many entity-name="Cart">
-                <column name="id_cart" not-null="true"></column>
+            <many-to-many entity-name="Card">
+                <column name="id_card" not-null="true"></column>
             </many-to-many>
         </set>
 

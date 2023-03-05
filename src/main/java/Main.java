@@ -30,7 +30,7 @@ public class Main {
             Item item2 = new Item(2);
             Item item3 = new Item(3);
             Item item4 = new Item(4);
-            Cart cart = new Cart(12,"name1");
+            Card cart = new Card(12,"name1");
             cart.setItems(new HashSet<Item>(Arrays.asList(item1, item2, item3, item4)));
 
             session.persist(cart);

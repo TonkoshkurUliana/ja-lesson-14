@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="Cart" table="cart" schema="hibernate">
+    <class name="Card" table="card" schema="hibernate">
         <id name="id">
             <column name="id" sql-type="int"/>
             <generator class="increment" />
@@ -16,8 +16,8 @@
             <column name="total" sql-type="int" not-null="true"/>
         </property>
 
-        <set name="items" table="cart_item" inverse="false" lazy="true" fetch="select" cascade="all" >
-            <key> <column name="id_cart" not-null="true"></column></key>
+        <set name="items" table="card_item" inverse="false" lazy="true" fetch="select" cascade="all" >
+            <key> <column name="id_card" not-null="true"></column></key>
         <many-to-many entity-name="Item">
             <column name="id_item" not-null="true"></column>
         </many-to-many>

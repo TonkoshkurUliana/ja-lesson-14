@@ -1,12 +1,11 @@
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 
 public class Item {
    private Integer id;
    private Integer total;
-   private Set<Cart> carts = new HashSet<Cart>();
+   private Set<Card> carts = new HashSet<Card>();
 
    public Item( Integer total) {
       this.total = total;
@@ -32,11 +31,11 @@ public class Item {
       this.total = total;
    }
 
-   public Set<Cart> getCarts() {
+   public Set<Card> getCarts() {
       return carts;
    }
 
-   public void setCarts(Set<Cart> carts) {
+   public void setCarts(Set<Card> carts) {
       this.carts = carts;
    }
 

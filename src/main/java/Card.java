@@ -1,18 +1,18 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class Cart {
+public class Card {
     private Integer id;
     private Integer total;
     private String name;
     private Set<Item> items = new HashSet<Item>();
 
-    public Cart(Integer total, String name) {
+    public Card(Integer total, String name) {
         this.total = total;
         this.name = name;
     }
 
-    public Cart() {
+    public Card() {
 
     }
 
@@ -50,7 +50,7 @@ public class Cart {
 
     @Override
     public String toString() {
-        return "Cart{" +
+        return "Card{" +
                 "id=" + id +
                 ", total=" + total +
                 ", name='" + name + '\'' +
